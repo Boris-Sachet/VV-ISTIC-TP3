@@ -53,3 +53,17 @@ Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 ## Answer
 
+1.  C'est quoi Input Space Partitioning???
+    C'est quoi les charactéristiques et blocks dont on parle la?
+
+2.  Coverage a 100% avec les 22 tests écris pendant l'implémentation, rien a rajouter.
+
+3.  Aucun prédicats dans la classe.
+
+4.  Score avec la première volée de tests
+    - Line Coverage: 21/21 (100%)
+    - Generated 16 mutations Killed 16 (100%)
+    - Mutations with no coverage 0. Test strength 100%
+    - Ran 18 tests (1.12 tests per mutation)
+
+    Pas besoin d'en rajouter visiblement.
