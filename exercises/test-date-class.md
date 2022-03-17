@@ -53,8 +53,12 @@ Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 ## Answer
 
-1.  C'est quoi Input Space Partitioning???
-    C'est quoi les charactéristiques et blocks dont on parle la?
+1.  Pour chaque valeur (jour, mois, année)- on teste
+        - valeur inférieur a 8
+        - valeur égale a 0
+        - valeur spéciale valide (année bisextile...)
+        - valeur a l'intérieur des ranges attendus
+        - valeur supérieur au range attendu
 
 2.  Coverage a 100% avec les 22 tests écris pendant l'implémentation, rien a rajouter.
 
