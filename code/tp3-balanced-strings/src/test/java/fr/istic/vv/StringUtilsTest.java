@@ -91,4 +91,7 @@ class StringUtilsTest {
     void testCurlyBracketInvalidContent(){
         assertFalse(isBalanced("{[}"));
     }
+
+    @Test
+    void testNullString(){assertThrows(NullPointerException.class, () -> {isBalanced(null);});}
 }

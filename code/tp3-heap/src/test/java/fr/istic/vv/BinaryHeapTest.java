@@ -70,6 +70,30 @@ class BinaryHeapTest {
     }
 
     @Test
+    public void testWithNegatives(){
+        heap.push(0);
+        heap.push(-1);
+        heap.push(-6);
+        heap.push(-100);
+        heap.push(-1658);
+        heap.push(-2);
+        heap.push(42);
+        heap.push(-3);
+        heap.push(22);
+        assertEquals(heap.getHeap(), Arrays.asList(-1658,-100,-2,-3,-6,-1,42,0,22));
+    }
+
+    @Test
+    public void testExtremes(){
+        heap.push(2147483647);
+        heap.push(-2147483647);
+        heap.push(0);
+        heap.push(1);
+        heap.push(-1);
+        assertEquals(heap.getHeap(), Arrays.asList(-2147483647,-1,0,2147483647,1));
+    }
+
+    @Test
     public void testCount(){
         assertEquals(heap.count(),heap.getHeap().size());
         heap.push(1);
@@ -119,9 +143,9 @@ class BinaryHeapTest {
         for (int i = 0; i < 15; i++){
             heap.push(i);
         }
-        heap.pop();
-        heap.pop();
-        heap.pop();
+        assertNotNull(heap.pop());
+        assertNotNull(heap.pop());
+        assertNotNull(heap.pop());
         for (int i = 3; i < 15; i++){
             assertEquals(heap.getHeap().get(0),i);
             heap.pop();
